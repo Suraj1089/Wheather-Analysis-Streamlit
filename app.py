@@ -7,6 +7,7 @@ import requests
 from dotenv import load_dotenv
 import os 
 
+load_dotenv(".env")
 WHEATHER_API_KEY=os.getenv('WHEATHER_API_KEY')
 # Page setting
 st.set_page_config(layout="wide")
