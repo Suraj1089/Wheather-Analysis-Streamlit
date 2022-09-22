@@ -9,9 +9,23 @@ import os
 
 load_dotenv(".env")
 WHEATHER_API_KEY=os.getenv('WHEATHER_API_KEY')
-# Page setting
-st.set_page_config(layout="wide")
 
+
+# Page setting
+st.set_page_config(layout="wide",page_icon="⛅")
+
+
+#hide navbar menu and streamlit icon
+
+hide_menu_icon = st.markdown(
+    """
+    <style>
+        #MainMenu {visibility : hidden;}
+        footer {visibility : hidden;}
+
+    """,
+    unsafe_allow_html=True
+)
 
 @st.cache
 def load_city_names():
