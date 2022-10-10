@@ -62,12 +62,13 @@ cover/
 # Translations
 *.mo
 *.pot
-
+template1.py 
 # Django stuff:
 *.log
 local_settings.py
 db.sqlite3
 db.sqlite3-journal
+.vscode/
 
 # Flask stuff:
 instance/
